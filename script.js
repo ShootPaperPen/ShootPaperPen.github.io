@@ -1,6 +1,9 @@
 const form = document.getElementById("filters");
 const itemContainers = document.getElementById("item-container");
 
+const orderButton = document.getElementById("order");
+const orderURL = ""; // ENTER ORDER URL
+
 // Use to hold objects
 const items = itemContainers.children;
 
@@ -27,10 +30,6 @@ function changeVisibility() {
     }
   }
 }
-
-// itemName = str (name the image the same as filename + .png ex. plushie.png)
-// price = number
-// tags = strings separated with comma
 
 function createNewItem(itemName, price, tags) {
   console.log(`Item name:${itemName}, Price:${price}, Tags:${tags}`);
@@ -78,9 +77,16 @@ function createNewItem(itemName, price, tags) {
   itemContainers.appendChild(itemContainer);
 }
 
+// CREATES ITEMS WITH THE FORMAT OF:
+// itemName = str
+// price = number
+// tags = strings separated with comma
+// TAKE NOTE:
+// - itemName is the name of the image filename (ex. itemName = plushie; => plushie.png)
+
 createNewItem("promo", 23.3, "Female");
 createNewItem("plushie", 99.75, "Male, Female");
 createNewItem("electric fan", 1000.4, "Male");
 createNewItem("led", 645000.9, "Male");
 
-const begone = document.getElementById("begone");
+orderButton.setAttribute("href", OrderURL);
