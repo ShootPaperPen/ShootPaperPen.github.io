@@ -112,6 +112,10 @@ nav {
   background-color: hsla(41, 70%, 72%, 0.25);
 }
 
+.item {
+  display: flex;
+}
+
 .testimage {
   height: 250px;
   width: 250px;
