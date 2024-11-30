@@ -14,8 +14,9 @@
     <link href="servicesStyle.css" rel="stylesheet" />
   </head>
   <body>
+    <!-- NAVIGATION BAR -->
     <nav class="navbar sticky-top nav-white navbar-expand-sm bg-dark-blue mt-0">
-      <div class="container">
+      <div class="container-fluid">
         <a href="#" class="navbar-brand ms-3"
           ><img
             src="images/PROFILE LOGO-GOLD.png"
@@ -23,7 +24,7 @@
             id="logo"
         /></a>
       </div>
-      <div class="container justify-content-center">
+      <div class="container-fluid justify-content-center">
         <ul class="navbar-nav justify-content-evenly">
           <li class="nav-item">
             <a href="#" class="nav-link">HOME</a>
@@ -40,8 +41,10 @@
         </ul>
       </div>
     </nav>
+
+    <!-- SERVICES HEADER -->
     <div
-      class="container-fluid d-flex justify-content-center align-items-center mb-5"
+      class="container-fluid d-flex justify-content-center align-items-center mb-5 extra-margin-bottom"
     >
       <img
         src="images/MIWACLE-CONTAINER.png"
@@ -53,9 +56,10 @@
         Services
       </h1>
     </div>
-    <div
-      class="container d-flex justify-content-center align-items-center margin-extra"
-    >
+    <br /><br /><br />
+
+    <!-- PROMO RENT -->
+    <div class="container d-flex justify-content-center align-items-center">
       <img
         src="images/MIWACLE-FRAME.png"
         alt="Miwacle Frame"
@@ -64,8 +68,12 @@
       />
       <img src="images/MIWACLE-PROMO.png" alt="Miwacle Promo" />
     </div>
+    <br /><br /><br />
+
+    <!-- FILTERS -->
     <div class="container text-light">
-      <form id="filters">
+      <!-- ITEM FILTERS -->
+      <form id="filters" class="my-3">
         <select name="filter" id="filter">
           <option value="all">All</option>
           <option value="a">a</option>
@@ -73,18 +81,59 @@
           <option value="c">c</option>
         </select>
 
-        <input type="checkbox" name="sex" id="Male" value="male" />
+        <input
+          type="checkbox"
+          name="sex"
+          id="Male"
+          value="male"
+          class="ms-2"
+          checked
+        />
         <label for="Male">Male</label>
-        <input type="checkbox" name="sex" id="Female" value="female" />
+        <input
+          type="checkbox"
+          name="sex"
+          id="Female"
+          value="female"
+          class="ms-2"
+          checked
+        />
         <label for="Female">Female</label>
       </form>
+
+      <!-- ITEM CONTAINER -->
       <div
-        class="d-flex justify-content-evenly align-content-evenly flex-wrap"
+        class="d-flex justify-content-evenly align-content-evenly flex-wrap pt-5"
         id="item-container"
       ></div>
     </div>
 
-    <div>hello</div>
+    <!-- ORDER BUTTON -->
+    <div class="container d-flex justify-content-center my-5">
+      <a href="#" id="order">Order</a>
+    </div>
+
+    <!-- FOOTER -->
+    <div
+      class="container-fluid position-relative fixed-bottom bg-primary mb-0"
+      id="footer"
+    >
+      <div class="d-flex flex-column">
+        <div>
+          <img src="images/facebookIcon.png" class="icon me-2 my-1" />Miwacle
+          Cosplay Rentals / Miwah Coser
+        </div>
+        <div>
+          <img src="images/phoneIcon.png" class="icon me-2 my-1" />09217284200
+        </div>
+        <div>
+          <img
+            src="images/emailIcon.png"
+            class="icon me-2 my-1"
+          />miwahcos@gmail.com
+        </div>
+      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>
