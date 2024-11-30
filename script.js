@@ -3,6 +3,7 @@ const itemContainers = document.getElementById("item-container");
 
 const orderButton = document.getElementById("order");
 const orderURL = ""; // ENTER ORDER URL
+orderButton.setAttribute("href", orderURL);
 
 // Use to hold objects
 const items = itemContainers.children;
@@ -88,5 +89,3 @@ createNewItem("promo", 23.3, "Female");
 createNewItem("plushie", 99.75, "Male, Female");
 createNewItem("electric fan", 1000.4, "Male");
 createNewItem("led", 645000.9, "Male");
-
-orderButton.setAttribute("href", OrderURL);
