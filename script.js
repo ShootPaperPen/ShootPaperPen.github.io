@@ -33,3 +33,4 @@ function changeVisibility(from, value) {
       break;
   }
 }
+console.log("hi");
