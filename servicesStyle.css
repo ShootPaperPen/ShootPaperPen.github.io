@@ -35,6 +35,11 @@ body {
   background-size: cover;
 }
 
+h1 {
+  font-size: 6rem;
+  font-family: "bismark";
+}
+
 #logo {
   width: 75px;
   height: 75px;
@@ -45,17 +50,12 @@ body {
 }
 
 .nav-item a {
-  color: #d8cfc5 !important;
+  color: #d8cfc5;
 }
 
 #a {
   width: 494.4px;
   height: 251.52px;
-}
-
-h1 {
-  font-size: 6rem;
-  font-family: "bismark";
 }
 
 .text-specialYellow {
@@ -91,6 +91,10 @@ nav {
 
 .text-color-yellow {
   color: #cf920f;
+}
+
+.text-color-gold-yellow {
+  color: var(--gold-yellow) !important;
 }
 
 #item-container {
@@ -173,4 +177,8 @@ nav {
 .icon {
   width: 2rem;
   height: 2rem;
+}
+
+.nav-link:hover {
+  color: var(--gold-yellow) !important;
 }
