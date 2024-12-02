@@ -57,7 +57,7 @@ function createNewItem(itemName, price, tags) {
   const imgItem = document.createElement("img");
   const imgItemStyle = imgItem.classList;
   imgItemStyle.add("product");
-  imgItem.setAttribute("src", "images/item-image/" + itemName + ".png");
+  imgItem.setAttribute("src", "images/item-image/" + itemName + ".jpg");
 
   // create element img for frame
   const imgFrame = document.createElement("img");
@@ -92,7 +92,7 @@ function createNewItem(itemName, price, tags) {
     - Ex. createNewItem("Miku Plushie", 200, "Female, Male");
 */
 
-createNewItem("promo", 23.3, "Female");
-createNewItem("plushie", 99.75, "Male, Female");
-createNewItem("electric fan", 1000.4, "Male");
-createNewItem("led", 645000.9, "Male");
+createNewItem("Zero Two", 23.3, "Female");
+createNewItem("Zero Two - Maid", 99.75, "Female");
+createNewItem("Kafka", 1000.4, "Female");
+createNewItem("Sage", 645000.9, "Female");
