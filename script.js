@@ -1,8 +1,13 @@
 const form = document.getElementById("filters");
 const itemContainers = document.getElementById("item-container");
 
+const promoImg = document.getElementById("frame").parentElement.children[1];
+const promoImgFileName = "MIWACLE-PROMO.png"; // ENTER FILENAME FOR PROMO IMG
+promoImg.setAttribute("src", "images/" + promoImgFileName);
+
 const orderButton = document.getElementById("order");
-const orderURL = ""; // ENTER ORDER URL
+const orderURL = "https://www.youtube.com"; // ENTER ORDER URL
+orderButton.setAttribute("href", orderURL);
 
 // Use to hold objects
 const items = itemContainers.children;
@@ -77,16 +82,17 @@ function createNewItem(itemName, price, tags) {
   itemContainers.appendChild(itemContainer);
 }
 
-// CREATES ITEMS WITH THE FORMAT OF:
-// itemName = str
-// price = number
-// tags = strings separated with comma
-// TAKE NOTE:
-// - itemName is the name of the image filename (ex. itemName = plushie; => plushie.png)
+/*
+  CREATES ITEMS WITH THE FORMAT OF:
+    - itemName = str
+    - price = number
+    - tags = strings separated with comma (ex. you want tags for male female cat dog then you write "Male, Female, Cat, Dog") well male and female lang yung coded :clown:
+  TAKE NOTE:
+    - itemName is the name of the image filename (ex. itemName = plushie; => plushie.png)
+    - Ex. createNewItem("Miku Plushie", 200, "Female, Male");
+*/
 
 createNewItem("promo", 23.3, "Female");
 createNewItem("plushie", 99.75, "Male, Female");
 createNewItem("electric fan", 1000.4, "Male");
 createNewItem("led", 645000.9, "Male");
-
-orderButton.setAttribute("href", OrderURL);
