@@ -33,6 +33,15 @@ function changeVisibility() {
     if (item.getAttribute("tags").includes("Female") && form.Female.checked) {
       item.style.display = "flex";
     }
+    if (item.getAttribute("tags").includes("Anime") && form.checked) {
+      item.style.display = "flex";
+    }
+    if (item.getAttribute("tags").includes("Games") && form.Female.checked) {
+      item.style.display = "flex";
+    }
+    if (item.getAttribute("tags").includes("Misc") && form.Female.checked) {
+      item.style.display = "flex";
+    }
   }
 }
 
@@ -103,7 +112,7 @@ createNewItem("Cleo de Nile - Monster High", 645000.9, "Female");
 createNewItem("Diaochan - Honor of Kings", 645000.9, "Female");
 createNewItem("Dolia - Honor of Kings", 645000.9, "Female");
 createNewItem("Fern - Freiren Beyond Journey's End", 645000.9, "Female");
-createNewItem("Freiren - Freiren Beyond Journey's End", 645000.9, "Female");
+createNewItem("Freiren - Freiren Beyond Journey's End", 645000.9, "Female, Anime");
 createNewItem("Gwen - LoL", 645000.9, "Female");
 createNewItem("Howl - Howl's Moving Castle", 645000.9, "Male");
 createNewItem("Howl(Blonde) - Howl's Moving Castle", 645000.9, "Male");
