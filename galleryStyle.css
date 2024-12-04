@@ -75,7 +75,10 @@ Highlighted (yellow) -- EACA86
     width: 448.8px;
     height: 448.8px;
   }
-  
+  #gal{
+    height:350px;
+    width: auto;
+  }
   /* PASTED LANG FROM MY TEST HTML/CSS */
   .image-grid {
     display: grid;
