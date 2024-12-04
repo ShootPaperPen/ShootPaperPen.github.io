@@ -100,7 +100,7 @@ createNewItem("Black Lobelia - My Dress-Up Darling", 645000.9, "Female");
 createNewItem("Bomb Devil - Chainsaw Man", 645000.9, "Female");
 createNewItem("CC - Code Geass", 645000.9, "Female");
 createNewItem("Cleo de Nile - Monster High", 645000.9, "Female");
-createNewItem("Diaochan - Honor of Kings", 645000.9, "Female");
+createNewItem("Fiery Spirit Diaochan - Honor of Kings", 645000.9, "Female");
 createNewItem("Dolia - Honor of Kings", 645000.9, "Female");
 createNewItem("Fern - Freiren Beyond Journey's End", 645000.9, "Female");
 createNewItem("Freiren - Freiren Beyond Journey's End", 645000.9, "Female");
