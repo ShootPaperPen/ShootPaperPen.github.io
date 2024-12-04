@@ -107,7 +107,7 @@ createNewItem("Freiren - Freiren Beyond Journey's End", 645000.9, "Female");
 createNewItem("Gwen - LoL", 645000.9, "Female");
 createNewItem("Howl - Howl's Moving Castle", 645000.9, "Male");
 createNewItem("Howl(Blonde) - Howl's Moving Castle", 645000.9, "Male");
-createNewItem("Jinx - Arcane", 645000.9, "Female");
+createNewItem("Jinx - Arcane(LoL)", 645000.9, "Female");
 createNewItem("Kafka - HSR", 1000.4, "Female");
 createNewItem("Kafka(Dress ver.) - HSR", 645000.9, "Female");
 createNewItem("Lute - Hazbin Hotel", 645000.9, "Female");
