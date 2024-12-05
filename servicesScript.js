@@ -80,8 +80,10 @@ function createNewItem(itemName, price, tags) {
   const itemContainerStyle = itemContainer.classList;
   itemContainerStyle.add("item");
   itemContainerStyle.add("flex-column");
+  itemContainerStyle.add("align-items-center");
   itemContainerStyle.add("text-center");
   itemContainerStyle.add("m-2");
+  itemContainerStyle.add("flex-wrap");
   itemContainer.setAttribute("tags", tags);
 
   // create element div for holding both img
