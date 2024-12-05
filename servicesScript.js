@@ -1,4 +1,11 @@
+let data = [];
+let displayData = [];
+
 const form = document.getElementById("filters");
+const filter = form.filter;
+const maleCheckbox = form.Male;
+const femaleCheckbox = form.Female;
+
 const itemContainers = document.getElementById("item-container");
 
 const promoImg = document.getElementById("frame").parentElement.children[1];
@@ -12,28 +19,57 @@ orderButton.setAttribute("href", orderURL);
 // Use to hold objects
 const items = itemContainers.children;
 
-form.filter.addEventListener("change", () => {
-  changeVisibility();
-});
+form.filter.addEventListener("change", setFilters);
 
-form.Female.addEventListener("change", () => {
-  changeVisibility();
-});
+form.Female.addEventListener("change", setFilters);
 
-form.Male.addEventListener("change", () => {
-  changeVisibility();
-});
+form.Male.addEventListener("change", setFilters);
 
-function changeVisibility() {
-  for (var item of items) {
-    item.style.display = "none";
-    if (item.getAttribute("tags").includes("Male") && form.Male.checked) {
-      item.style.display = "flex";
-    }
-    if (item.getAttribute("tags").includes("Female") && form.Female.checked) {
-      item.style.display = "flex";
-    }
+// function changeVisibility() {
+//   for (var item of items) {
+//     item.style.display = "none";
+
+//     if (item.getAttribute("tags").includes("Male") && form.Male.checked) {
+//       item.style.display = "flex";
+//     }
+//     if (item.getAttribute("tags").includes("Female") && form.Female.checked) {
+//       item.style.display = "flex";
+//     }
+//   }
+// }
+
+function optionFilter() {
+  displayData = data.filter(function (data) {
+    console.log("Filtering: " + filter.value);
+    if (filter.value == "All") return data;
+    if (data.tags.includes("Anime") && filter.value == "Anime") return data;
+    if (data.tags.includes("Games") && filter.value == "Games") return data;
+    if (data.tags.includes("Misc") && filter.value == "Misc") return data;
+  });
+}
+
+function checkboxFiltering() {
+  for (const item of data) {
+    item.element.style.display = "none";
+
+    if (
+      maleCheckbox.checked &&
+      displayData.includes(item) &&
+      item.tags.includes("Male")
+    )
+      item.element.style.display = "block";
+    if (
+      femaleCheckbox.checked &&
+      displayData.includes(item) &&
+      item.tags.includes("Female")
+    )
+      item.element.style.display = "block";
   }
+}
+
+function setFilters() {
+  optionFilter();
+  checkboxFiltering();
 }
 
 function createNewItem(itemName, price, tags) {
@@ -78,6 +114,15 @@ function createNewItem(itemName, price, tags) {
   itemContainer.innerHTML += itemName + "<br />";
   itemContainer.appendChild(priceSpan);
 
+  const item = {
+    name: itemName,
+    price: price,
+    tags: tags,
+    element: itemContainer,
+  };
+
+  data.push(item);
+
   // appends item to item container
   itemContainers.appendChild(itemContainer);
 }
@@ -100,14 +145,18 @@ createNewItem("Black Lobelia - My Dress-Up Darling", 645000.9, "Female");
 createNewItem("Bomb Devil - Chainsaw Man", 645000.9, "Female");
 createNewItem("CC - Code Geass", 645000.9, "Female");
 createNewItem("Cleo de Nile - Monster High", 645000.9, "Female");
-createNewItem("Fiery Spirit Diaochan - Honor of Kings", 645000.9, "Female");
+createNewItem("Diaochan - Honor of Kings", 645000.9, "Female");
 createNewItem("Dolia - Honor of Kings", 645000.9, "Female");
-createNewItem("Fern - Freiren Beyond Journey's End", 645000.9, "Female");
-createNewItem("Freiren - Freiren Beyond Journey's End", 645000.9, "Female");
+createNewItem("Fern - Freiren Beyond Journey's End", 645000.9, "Female, Anime");
+createNewItem(
+  "Freiren - Freiren Beyond Journey's End",
+  645000.9,
+  "Female, Anime"
+);
 createNewItem("Gwen - LoL", 645000.9, "Female");
 createNewItem("Howl - Howl's Moving Castle", 645000.9, "Male");
-createNewItem("Howl(Blonde) - Howl's Moving Castle", 645000.9, "Male");
-createNewItem("Jinx - Arcane", 645000.9, "Female");
+createNewItem("Howl(Blonde) - Howl's Moving Castle", 645000.9, "Male, Anime");
+createNewItem("Jinx - Arcane(LoL)", 645000.9, "Female");
 createNewItem("Kafka - HSR", 1000.4, "Female");
 createNewItem("Kafka(Dress ver.) - HSR", 645000.9, "Female");
 createNewItem("Lute - Hazbin Hotel", 645000.9, "Female");
@@ -128,6 +177,3 @@ createNewItem("Xayah - LoL", 645000.9, "Female");
 createNewItem("Yuta Okkotsu - Jujutsu Kaisen", 645000.9, "Male");
 createNewItem("Zero Two - Darling in the Franxx", 23.3, "Female");
 createNewItem("Zero Two(Maid) - Darling in the Franxx", 99.75, "Female");
-
-
-
