@@ -139,43 +139,39 @@ function createNewItem(itemName, price, tags) {
     - Ex. createNewItem("Miku Plushie", 200, "Female, Male");
 */
 
-createNewItem("2B - Nier Automata", 645000.9, "Female");
-createNewItem("Aura - Freiren Beyond Journey's End", 645000.9, "Female");
-createNewItem("Autumn Fox", 645000.9, "Female");
-createNewItem("Battle Bunny Miss Fortune - LoL", 645000.9, "Female");
-createNewItem("Black Lobelia - My Dress-Up Darling", 645000.9, "Female");
-createNewItem("Bomb Devil - Chainsaw Man", 645000.9, "Female");
-createNewItem("CC - Code Geass", 645000.9, "Female");
+createNewItem("2B - Nier Automata", 645000.9, "Female, Games");
+createNewItem("Aura - Freiren Beyond Journey's End", 645000.9, "Female, Anime");
+createNewItem("Autumn Fox", 645000.9, "Female, Misc");
+createNewItem("Battle Bunny Miss Fortune - LoL", 645000.9, "Female, Games");
+createNewItem("Black Lobelia - My Dress-Up Darling", 645000.9, "Female, Anime");
+createNewItem("Bomb Devil - Chainsaw Man", 645000.9, "Female, Anime");
+createNewItem("CC - Code Geass", 645000.9, "Female, Anime");
 createNewItem("Cleo de Nile - Monster High", 645000.9, "Female");
-createNewItem("Diaochan - Honor of Kings", 645000.9, "Female");
-createNewItem("Dolia - Honor of Kings", 645000.9, "Female");
+createNewItem("Diaochan - Honor of Kings", 645000.9, "Female, Games");
+createNewItem("Dolia - Honor of Kings", 645000.9, "Female, Games");
 createNewItem("Fern - Freiren Beyond Journey's End", 645000.9, "Female, Anime");
-createNewItem(
-  "Freiren - Freiren Beyond Journey's End",
-  645000.9,
-  "Female, Anime"
-);
-createNewItem("Gwen - LoL", 645000.9, "Female");
-createNewItem("Howl - Howl's Moving Castle", 645000.9, "Male");
+createNewItem("Freiren - Freiren Beyond Journey's End", 645000.9,  "Female, Anime");
+createNewItem("Gwen - LoL", 645000.9, "Female, Games");
+createNewItem("Howl - Howl's Moving Castle", 645000.9, "Male, Anime");
 createNewItem("Howl(Blonde) - Howl's Moving Castle", 645000.9, "Male, Anime");
-createNewItem("Jinx - Arcane(LoL)", 645000.9, "Female");
-createNewItem("Kafka - HSR", 1000.4, "Female");
-createNewItem("Kafka(Dress ver.) - HSR", 645000.9, "Female");
-createNewItem("Lute - Hazbin Hotel", 645000.9, "Female");
+createNewItem("Jinx - Arcane", 645000.9, "Female, Games");
+createNewItem("Kafka - HSR", 1000.4, "Female, Games");
+createNewItem("Kafka(Dress ver.) - HSR", 645000.9, "Female, Games");
+createNewItem("Lute - Hazbin Hotel", 645000.9, "Female, Misc");
 createNewItem("Mai Sakurajima - Bunny Girl Senpai", 645000.9, "Female");
-createNewItem("Maomao - Apothecary Diaries", 645000.9, "Female");
-createNewItem("Nanami Kento - Jujutsu Kaisen", 645000.9, "Male");
-createNewItem("Nazuna Nanakusa - Call of the Night", 645000.9, "Female");
-createNewItem("Raphtalia - Rising of the Shield Hero", 645000.9, "Female");
-createNewItem("Red Blood Cell - Cells at Work", 645000.9, "Female");
-createNewItem("Reina - Tekken 8", 645000.9, "Female");
-createNewItem("Reze - Chainsaw Man", 645000.9, "Female");
-createNewItem("Rizu Kyun - My Dress-Up Darling", 645000.9, "Female");
-createNewItem("Sage - Valorant", 645000.9, "Female");
-createNewItem("Seraphine - LoL", 645000.9, "Female");
-createNewItem("Spirit Blossom Ahri - Lol", 645000.9, "Female");
-createNewItem("Ubel - Freiren Beyond Journey's End", 645000.9, "Female");
-createNewItem("Xayah - LoL", 645000.9, "Female");
-createNewItem("Yuta Okkotsu - Jujutsu Kaisen", 645000.9, "Male");
-createNewItem("Zero Two - Darling in the Franxx", 23.3, "Female");
-createNewItem("Zero Two(Maid) - Darling in the Franxx", 99.75, "Female");
+createNewItem("Maomao - Apothecary Diaries", 645000.9, "Female, Anime");
+createNewItem("Nanami Kento - Jujutsu Kaisen", 645000.9, "Male, Anime");
+createNewItem("Nazuna Nanakusa - Call of the Night", 645000.9, "Female, Anime");
+createNewItem("Raphtalia - Rising of the Shield Hero", 645000.9, "Female, Anime");
+createNewItem("Red Blood Cell - Cells at Work", 645000.9, "Female, Anime");
+createNewItem("Reina - Tekken 8", 645000.9, "Female, Games");
+createNewItem("Reze - Chainsaw Man", 645000.9, "Female, Anime");
+createNewItem("Rizu Kyun - My Dress-Up Darling", 645000.9, "Female, Anime");
+createNewItem("Sage - Valorant", 645000.9, "Female, Games");
+createNewItem("Seraphine - LoL", 645000.9, "Female, Games");
+createNewItem("Spirit Blossom Ahri - Lol", 645000.9, "Female, Games");
+createNewItem("Ubel - Freiren Beyond Journey's End", 645000.9, "Female, Anime");
+createNewItem("Xayah - LoL", 645000.9, "Female, Games");
+createNewItem("Yuta Okkotsu - Jujutsu Kaisen", 645000.9, "Male, Anime");
+createNewItem("Zero Two - Darling in the Franxx", 23.3, "Female, Anime");
+createNewItem("Zero Two(Maid) - Darling in the Franxx", 99.75, "Female, Anime");
