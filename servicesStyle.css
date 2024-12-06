@@ -127,6 +127,7 @@ nav {
 .item {
   display: flex;
   max-width: 250px;
+  cursor: pointer;
 }
 
 .testimage {
@@ -184,4 +185,14 @@ nav {
 
 .nav-link:hover {
   color: var(--gold-yellow) !important;
+}
+
+#modalContent {
+  overflow-y: scroll;
+  max-height: 85vh;
+}
+
+#modalContent > img {
+  width: 100%;
+  border: 1px solid black;
 }

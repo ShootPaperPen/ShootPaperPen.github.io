@@ -1,17 +1,28 @@
-let data = [];
-let displayData = [];
+// Stores Data
+let data = []; // None Filtered Data
+let displayData = []; // Filtered Data According to Select
 
+// For Modals
+const modalItemName = document.getElementById("modalItemName");
+const modalItemPrice = document.getElementById("modalItemPrice");
+const modalItemDesc = document.getElementById("modalItemDesc");
+const modalImage = document.getElementById("modalImage");
+
+// Form for filtering
 const form = document.getElementById("filters");
 const filter = form.filter;
 const maleCheckbox = form.Male;
 const femaleCheckbox = form.Female;
 
+// Item Containers
 const itemContainers = document.getElementById("item-container");
 
+// For Promo Images (Soon to be Carousel)
 const promoImg = document.getElementById("frame").parentElement.children[1];
 const promoImgFileName = "MIWACLE-PROMO.png"; // ENTER FILENAME FOR PROMO IMG
 promoImg.setAttribute("src", "images/" + promoImgFileName);
 
+// For Order Button
 const orderButton = document.getElementById("order");
 const orderURL = "https://www.youtube.com"; // ENTER ORDER URL
 orderButton.setAttribute("href", orderURL);
@@ -72,7 +83,7 @@ function setFilters() {
   checkboxFiltering();
 }
 
-function createNewItem(itemName, price, tags) {
+function createNewItem(itemName, price, tags, desc) {
   console.log(`Item name:${itemName}, Price:${price}, Tags:${tags}`);
 
   // create element div for all other elements
@@ -85,6 +96,8 @@ function createNewItem(itemName, price, tags) {
   itemContainerStyle.add("m-2");
   itemContainerStyle.add("flex-wrap");
   itemContainer.setAttribute("tags", tags);
+  itemContainer.setAttribute("data-toggle", "modal");
+  itemContainer.setAttribute("data-target", "#itemModal");
 
   // create element div for holding both img
   const imgGrid = document.createElement("div");
@@ -116,6 +129,7 @@ function createNewItem(itemName, price, tags) {
   itemContainer.innerHTML += itemName + "<br />";
   itemContainer.appendChild(priceSpan);
 
+  // Create Object with Item Data
   const item = {
     name: itemName,
     price: price,
@@ -123,6 +137,15 @@ function createNewItem(itemName, price, tags) {
     element: itemContainer,
   };
 
+  // EventListener to Change Name, Price, Description, and Image in Modal
+  itemContainer.addEventListener("click", () => {
+    modalImage.setAttribute("src", "images/item-image/" + itemName + ".jpg");
+    modalItemName.innerText = itemName;
+    modalItemPrice.innerText = price;
+    modalItemDesc.innerText = desc;
+  });
+
+  // Push/stores object to Data
   data.push(item);
 
   // appends item to item container
@@ -139,7 +162,12 @@ function createNewItem(itemName, price, tags) {
     - Ex. createNewItem("Miku Plushie", 200, "Female, Male");
 */
 
-createNewItem("2B - Nier Automata", 645000.9, "Female, Games");
+createNewItem(
+  "2B - Nier Automata",
+  645000.9,
+  "Female, Games",
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in orci at elit ultricies hendrerit. Donec pulvinar ex justo, ac sagittis massa fringilla ut. Morbi accumsan consectetur vehicula. Proin vitae ligula neque. Aliquam laoreet, augue non ornare lacinia, dolor metus rutrum mi, sed posuere ex leo sed lectus. Phasellus fermentum, libero a elementum pharetra, velit lorem porta justo, eget malesuada urna nibh nec ipsum. Morbi malesuada risus turpis, ut volutpat turpis efficitur ut. Maecenas elit diam, pellentesque vel porta non, tincidunt quis sapien. Integer ac ornare tortor, et tempor turpis. Suspendisse posuere lobortis velit quis rhoncus. Donec ut lacinia quam. Phasellus sit amet lorem ligula. Phasellus arcu nulla, condimentum vel commodo sit amet, convallis tincidunt enim. Quisque vulputate magna sem, quis tempus odio aliquam eu. Etiam iaculis lacinia nunc in tincidunt."
+);
 createNewItem("Aura - Freiren Beyond Journey's End", 645000.9, "Female, Anime");
 createNewItem("Autumn Fox", 645000.9, "Female, Misc");
 createNewItem("Battle Bunny Miss Fortune - LoL", 645000.9, "Female, Games");
@@ -150,7 +178,11 @@ createNewItem("Cleo de Nile - Monster High", 645000.9, "Female");
 createNewItem("Diaochan - Honor of Kings", 645000.9, "Female, Games");
 createNewItem("Dolia - Honor of Kings", 645000.9, "Female, Games");
 createNewItem("Fern - Freiren Beyond Journey's End", 645000.9, "Female, Anime");
-createNewItem("Freiren - Freiren Beyond Journey's End", 645000.9,  "Female, Anime");
+createNewItem(
+  "Freiren - Freiren Beyond Journey's End",
+  645000.9,
+  "Female, Anime"
+);
 createNewItem("Gwen - LoL", 645000.9, "Female, Games");
 createNewItem("Howl - Howl's Moving Castle", 645000.9, "Male, Anime");
 createNewItem("Howl(Blonde) - Howl's Moving Castle", 645000.9, "Male, Anime");
@@ -162,7 +194,11 @@ createNewItem("Mai Sakurajima - Bunny Girl Senpai", 645000.9, "Female");
 createNewItem("Maomao - Apothecary Diaries", 645000.9, "Female, Anime");
 createNewItem("Nanami Kento - Jujutsu Kaisen", 645000.9, "Male, Anime");
 createNewItem("Nazuna Nanakusa - Call of the Night", 645000.9, "Female, Anime");
-createNewItem("Raphtalia - Rising of the Shield Hero", 645000.9, "Female, Anime");
+createNewItem(
+  "Raphtalia - Rising of the Shield Hero",
+  645000.9,
+  "Female, Anime"
+);
 createNewItem("Red Blood Cell - Cells at Work", 645000.9, "Female, Anime");
 createNewItem("Reina - Tekken 8", 645000.9, "Female, Games");
 createNewItem("Reze - Chainsaw Man", 645000.9, "Female, Anime");
