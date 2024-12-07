@@ -96,8 +96,8 @@ function createNewItem(itemName, price, tags, desc) {
   itemContainerStyle.add("m-2");
   itemContainerStyle.add("flex-wrap");
   itemContainer.setAttribute("tags", tags);
-  itemContainer.setAttribute("data-toggle", "modal");
-  itemContainer.setAttribute("data-target", "#itemModal");
+  itemContainer.setAttribute("data-bs-toggle", "modal");
+  itemContainer.setAttribute("data-bs-target", "#itemModal");
 
   // create element div for holding both img
   const imgGrid = document.createElement("div");
