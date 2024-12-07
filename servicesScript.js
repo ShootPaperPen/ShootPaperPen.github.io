@@ -18,7 +18,8 @@ const femaleCheckbox = form.Female;
 const itemContainers = document.getElementById("item-container");
 
 // For Promo Images (Soon to be Carousel)
-const promoImg = document.getElementById("frame").parentElement.children[1];
+const promoImg =
+  document.getElementById("promoFrame").parentElement.children[1];
 const promoImgFileName = "MIWACLE-PROMO.png"; // ENTER FILENAME FOR PROMO IMG
 promoImg.setAttribute("src", "images/" + promoImgFileName);
 
@@ -35,19 +36,6 @@ form.filter.addEventListener("change", setFilters);
 form.Female.addEventListener("change", setFilters);
 
 form.Male.addEventListener("change", setFilters);
-
-// function changeVisibility() {
-//   for (var item of items) {
-//     item.style.display = "none";
-
-//     if (item.getAttribute("tags").includes("Male") && form.Male.checked) {
-//       item.style.display = "flex";
-//     }
-//     if (item.getAttribute("tags").includes("Female") && form.Female.checked) {
-//       item.style.display = "flex";
-//     }
-//   }
-// }
 
 function optionFilter() {
   displayData = data.filter(function (data) {
