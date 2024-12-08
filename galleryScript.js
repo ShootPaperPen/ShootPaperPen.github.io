@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const imgFrame = document.createElement("img");
     const imgFrameClass = imgFrame.classList;
     imgFrameClass.add("frame");
-    imgFrame.setAttribute("src", "images/MIWACLE-ITEM-CONTAINER.png");
+    imgFrame.setAttribute("src", "images/PIC_CONTsqr.png");
 
     // appends elements required inside the item
     itemContainer.appendChild(imgGrid);

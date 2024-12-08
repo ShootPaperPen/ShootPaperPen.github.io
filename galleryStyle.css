@@ -110,8 +110,6 @@ Highlighted (yellow) -- EACA86
     height: 80vh;
     max-height: 80vh !important;
     overflow-y: scroll;
-    border: 5px solid var(--gold-yellow);
-    border-radius: 1rem;
   }
   
   #item-container::-webkit-scrollbar {
