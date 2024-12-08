@@ -53,7 +53,11 @@ h1 {
   color: #d8cfc5;
 }
 
-#a {
+.half {
+  width: 50%;
+}
+
+#headerFrame {
   width: 494.4px;
   height: 251.52px;
 }
@@ -66,12 +70,12 @@ nav {
   margin-bottom: 10vh;
 }
 
-#frame {
+#promoFrame {
   width: 580.8px;
   height: 580.8px;
 }
 
-#frame + img {
+#promoFrame + img {
   width: 448.8px;
   height: 448.8px;
 }
@@ -127,14 +131,15 @@ nav {
 .item {
   display: flex;
   max-width: 250px;
+  cursor: pointer;
 }
 
-.testimage {
+/* .itemimage {
   height: 250px;
   width: 250px;
   grid-row: 1/2;
   grid-column: 1/2;
-}
+} */
 
 .my-grid {
   display: grid;
@@ -184,4 +189,25 @@ nav {
 
 .nav-link:hover {
   color: var(--gold-yellow) !important;
+}
+
+#modalContent {
+  overflow-y: scroll;
+  max-height: 85vh;
+}
+
+#modalContent > img {
+  width: 100%;
+  border: 1px solid black;
+}
+
+.carousel-inner {
+  width: 448.8px;
+  height: 448.8px;
+}
+
+.carousel-item > img {
+  width: 448.8px;
+  height: 448.8px;
+  object-fit: cover;
 }
