@@ -1,7 +1,30 @@
 /* 
-Navigation bar background color -- 03032b
-Text Color (white) -- D8CFC5
-Highlighted (yellow) -- EACA86
+https://rhodesmill.org/brandon/2011/concentric-css/
+-=CONCENTRIC CSS=-
+{
+    display: ;    // Where and how the box is placed
+    position: ;
+    float: ;
+    clear: ;
+
+    visibility: ;  // Can the box be seen?
+    opacity: ;
+    z-index: ;
+
+    margin: ;     // Layers of the box model
+    outline: ;
+    border: ;
+    background: ;
+    padding: ;
+
+    width: ;      // Content dimensions and scrollbars
+    height: ;
+    overflow: ;
+
+    color: ;      // Text
+    text: ;
+    font: ;
+}
 */
 
 @font-face {
@@ -30,9 +53,9 @@ Highlighted (yellow) -- EACA86
 }
 
 body {
-  font-size: 1.4rem;
   background-image: url("images/MIWACLE-BACKGROUND.png");
   background-size: cover;
+  font-size: 1.4rem;
 }
 
 h1 {
@@ -40,36 +63,48 @@ h1 {
   font-family: "bismark";
 }
 
+/* TEXT AND BACKGROUND COLOR */
+.bg-dark-blue {
+  background-color: #03032b;
+}
+
+.text-color-specialYellow {
+  color: #eaca86;
+}
+
+.text-color-yellow {
+  color: #cf920f;
+}
+
+.text-color-gold-yellow {
+  color: var(--gold-yellow) !important;
+}
+
+/* NAV CLASSES AND IDS*/
 #logo {
   width: 75px;
   height: 75px;
 }
 
-.bg-dark-blue {
-  background-color: #03032b;
+.nav-link:hover {
+  color: var(--gold-yellow) !important;
 }
 
 .nav-item a {
   color: #d8cfc5;
 }
 
-.half {
-  width: 50%;
+nav {
+  margin-bottom: 10vh;
 }
 
+/* HEADER */
 #headerFrame {
   width: 494.4px;
   height: 251.52px;
 }
 
-.text-specialYellow {
-  color: #eaca86;
-}
-
-nav {
-  margin-bottom: 10vh;
-}
-
+/* PROMO RENT FRAME AND OR CAROUSEL */
 #promoFrame {
   width: 580.8px;
   height: 580.8px;
@@ -80,25 +115,26 @@ nav {
   height: 448.8px;
 }
 
-/* PASTED LANG FROM MY TEST HTML/CSS */
-.image-grid {
-  display: grid;
-  grid-template: 250px / 250px;
+.carousel-inner {
+  width: 448.8px;
+  height: 448.8px;
 }
 
-.image-grid img {
-  width: 250px;
-  height: 250px;
-  grid-row: 1/2;
-  grid-column: 1/2;
+.carousel-item > img {
+  width: 448.8px;
+  height: 448.8px;
+  object-fit: cover;
 }
 
-.text-color-yellow {
-  color: #cf920f;
-}
+/* FILTER + ITEM CONTAINER + ITEM AND ITEM IMAGES */
+#filter {
+  border: 5px solid var(--gold-yellow);
+  border-radius: 15px;
 
-.text-color-gold-yellow {
-  color: var(--gold-yellow) !important;
+  padding: 0.5rem 1rem;
+
+  background-color: var(--dark-blue);
+  color: white;
 }
 
 #item-container {
@@ -128,69 +164,6 @@ nav {
   background-color: hsla(41, 70%, 72%, 0.25);
 }
 
-.item {
-  display: flex;
-  max-width: 250px;
-  cursor: pointer;
-}
-
-/* .itemimage {
-  height: 250px;
-  width: 250px;
-  grid-row: 1/2;
-  grid-column: 1/2;
-} */
-
-.my-grid {
-  display: grid;
-  grid-template: 250px/ 250px;
-}
-
-#filter {
-  padding: 0.5rem 1rem;
-  border: 5px solid var(--gold-yellow);
-  border-radius: 15px;
-  background-color: var(--dark-blue);
-  color: white;
-}
-
-/* #filter:hover {
-  background-color: black;
-} */
-
-#order {
-  border: 5px solid var(--gold-yellow);
-  border-radius: 1rem;
-
-  color: white;
-  font-size: 2rem;
-  text-decoration: none;
-
-  background-color: var(--dark-blue);
-
-  padding: 0.5rem 2rem;
-}
-
-#footer {
-  padding: 2rem;
-  background-image: url("images/MIWACLE-FOOTER-BG.png");
-  background-size: cover;
-}
-
-#footer * {
-  font-family: "theBlowar";
-  color: white;
-}
-
-.icon {
-  width: 2rem;
-  height: 2rem;
-}
-
-.nav-link:hover {
-  color: var(--gold-yellow) !important;
-}
-
 #modalContent {
   overflow-y: scroll;
   max-height: 85vh;
@@ -201,13 +174,57 @@ nav {
   border: 1px solid black;
 }
 
-.carousel-inner {
-  width: 448.8px;
-  height: 448.8px;
+.image-grid {
+  display: grid;
+  grid-template: 250px / 250px;
 }
 
-.carousel-item > img {
-  width: 448.8px;
-  height: 448.8px;
-  object-fit: cover;
+.image-grid img {
+  grid-row: 1/2;
+  grid-column: 1/2;
+
+  width: 250px;
+  height: 250px;
+}
+
+.item {
+  display: flex;
+
+  cursor: pointer;
+
+  max-width: 250px;
+}
+
+.my-grid {
+  display: grid;
+  grid-template: 250px/ 250px;
+}
+
+/* ORDER BUTTON */
+#order {
+  border: 5px solid var(--gold-yellow);
+  border-radius: 1rem;
+  background-color: var(--dark-blue);
+  padding: 0.5rem 2rem;
+
+  color: white;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+/* FOOTER */
+#footer {
+  padding: 2rem;
+  background-image: url("images/MIWACLE-FOOTER-BG.png");
+  background-size: cover;
+}
+
+#footer * {
+  color: white;
+  font-family: "theBlowar";
+}
+
+.icon {
+  width: 2rem;
+  height: 2rem;
 }
