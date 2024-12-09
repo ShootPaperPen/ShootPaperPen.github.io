@@ -167,6 +167,7 @@ nav {
 #modalContent {
   overflow-y: scroll;
   max-height: 85vh;
+  background-image: url("images/MODALBG.png");
 }
 
 #modalContent > img {
