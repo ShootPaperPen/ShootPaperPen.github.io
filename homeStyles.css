@@ -203,3 +203,25 @@ nav {
   height: 448.8px;
   object-fit: cover;
 }
+
+#carouselContainer {
+  background-image: url('images/PROMOBG.png');
+  background-size: cover;
+  background-position: center;
+
+  @media (max-width: 768px) {
+    
+  }
+}
+
+
+/* continue */
+#aboutUsFrame {
+  width: auto;
+  height: auto;
+}
+
+h1 {
+  font-size: 6rem;
+  font-family: "bismark";
+}
