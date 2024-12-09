@@ -1,0 +1,198 @@
+/* 
+https://rhodesmill.org/brandon/2011/concentric-css/
+-=CONCENTRIC CSS=-
+{
+    display: ;    // Where and how the box is placed
+    position: ;
+    float: ;
+    clear: ;
+
+    visibility: ;  // Can the box be seen?
+    opacity: ;
+    z-index: ;
+
+    margin: ;     // Layers of the box model
+    outline: ;
+    border: ;
+    background: ;
+    padding: ;
+
+    width: ;      // Content dimensions and scrollbars
+    height: ;
+    overflow: ;
+
+    color: ;      // Text
+    text: ;
+    font: ;
+}
+*/
+
+@font-face {
+  font-family: laSignora;
+  src: url(fonts/LaSignora-DemoVersion-Regular.otf);
+}
+
+@font-face {
+  font-family: theBlowar;
+  src: url(fonts/TheBlowarRegular-d91mZ.ttf);
+}
+
+@font-face {
+  font-family: bismark;
+  src: url(fonts/Bismarck.otf);
+}
+
+:root {
+  --dark-blue: #03032b;
+  --darker-white: #d8cfc5;
+  --gold-yellow: #eaca86;
+}
+
+* {
+  font-family: "laSignora";
+  color: white;
+}
+
+body {
+  background-image: url("images/MIWACLE-BACKGROUND.png");
+  background-size: cover;
+  font-size: 1.4rem;
+}
+
+h1 {
+  font-size: 6rem;
+  font-family: "bismark";
+  color: var(--gold-yellow);
+  text-decoration-line: underline;
+}
+
+/* TEXT AND BACKGROUND COLOR */
+.bg-dark-blue {
+  background-color: #03032b !important;
+}
+
+.bg-semi-transparent-white {
+  background-color: hsla(235, 62%, 31%, 0.25) !important;
+}
+
+.text-color-specialYellow {
+  color: #eaca86 !important;
+}
+
+.text-color-yellow {
+  color: #cf920f !important;
+}
+
+.text-color-gold-yellow {
+  color: var(--gold-yellow) !important;
+}
+
+/* REUSABLE */
+.py-6 {
+  padding-top: 6rem !important;
+  padding-bottom: 6rem !important;
+}
+
+.linkButton {
+  border: 2px solid var(--gold-yellow);
+  border-radius: 10px;
+  background-color: var(--dark-blue);
+  padding: 0.25rem 1rem;
+
+  display: inline;
+}
+
+/* NAV CLASSES AND IDS*/
+#logo {
+  width: 75px;
+  height: 75px;
+}
+
+.nav-link:hover {
+  color: var(--gold-yellow) !important;
+}
+
+.nav-item a {
+  color: #d8cfc5;
+}
+
+/* PROMO RENT FRAME AND OR CAROUSEL */
+#promoFrame {
+  width: 580.8px;
+  height: 580.8px;
+}
+
+#promoFrame + img {
+  width: 448.8px;
+  height: 448.8px;
+}
+
+.carousel-inner {
+  width: 448.8px;
+  height: 448.8px;
+}
+
+.carousel-item > img {
+  width: 448.8px;
+  height: 448.8px;
+  object-fit: cover;
+}
+
+#pagesContainer {
+  padding: 1rem;
+}
+
+/* ABOUT US, SERVICES, GALLERY*/
+#pagesContainer #AboutUs,
+#pagesContainer #Services {
+  width: 650px;
+  height: 650px;
+
+  display: grid;
+  grid-template-rows: 50px/100px/350px/100px/50px;
+  grid-template-areas: "." "header" "text" "button" ".";
+
+  text-align: center;
+}
+
+#AboutUs h1,
+#Services h1 {
+  grid-area: header;
+}
+
+#AboutUs p,
+#Services p {
+  grid-area: text;
+}
+
+#AboutUs input,
+#Services input {
+  grid-area: button;
+}
+
+#pagesContainer #AboutUs {
+  background: url("images/AboutUsFrame.png");
+  background-size: cover;
+}
+
+#pagesContainer #Services {
+  background: url("images/AboutUsFrame.png");
+  background-size: cover;
+}
+
+/* FOOTER */
+#footer {
+  padding: 2rem;
+  background-image: url("images/MIWACLE-FOOTER-BG.png");
+  background-size: cover;
+}
+
+#footer * {
+  color: white;
+  font-family: "theBlowar";
+}
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+}

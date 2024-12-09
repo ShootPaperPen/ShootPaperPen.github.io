@@ -10,7 +10,7 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link href="servicesStyle.css" rel="stylesheet" />
+    <link href="homeStyle.css" rel="stylesheet" />
     <link
       rel="icon"
       href="images/PROFILE LOGO-GOLD.png"
@@ -31,13 +31,15 @@
       <div class="container-fluid justify-content-end">
         <ul class="navbar-nav">
           <li class="nav-item mx-4">
-            <a href="#" class="nav-link text-color-gold-yellow">HOME</a>
+            <a href="#" class="nav-link">HOME</a>
           </li>
           <li class="nav-item mx-4">
             <a href="about.html" class="nav-link">ABOUT</a>
           </li>
           <li class="nav-item mx-4">
-            <a href="services.html" class="nav-link">SERVICE</a>
+            <a href="services.html" class="nav-link text-color-gold-yellow"
+              >SERVICE</a
+            >
           </li>
           <li class="nav-item mx-4">
             <a href="gallery.html" class="nav-link">GALLERY</a>
@@ -45,12 +47,17 @@
         </ul>
       </div>
     </nav>
-    
-    <!-- BANNER -->
-     <div></div>
+
+    <!-- HOME BANNER -->
+
+    <div class="">
+      <img src="images/HomeBanner.png" alt="Banner" class="w-100" />
+    </div>
 
     <!-- PROMO RENT / CAROUSEL -->
-    <div class="container d-flex justify-content-center align-items-center">
+    <div
+      class="container-fluid d-flex justify-content-center align-items-center py-6 bg-semi-transparent-white"
+    >
       <img
         src="images/MIWACLE-FRAME.png"
         alt="Miwacle Frame"
@@ -116,12 +123,47 @@
       </div>
       <!-- <img src="images/MIWACLE-PROMO.png" alt="Miwacle Promo" /> -->
     </div>
-    <br /><br /><br />
-
 
     <!-- HOME LINE -->
-    <div>
-      <img src="images/HOME_LINE.png" class="object-center object-fill">
+    <div class="d-flex justify-content-center">
+      <img
+        src="images/HOME_LINE.png"
+        class="object-center object-fill w-75 mx-auto"
+      />
+    </div>
+
+    <!-- ABOUT US AND SERVICES -->
+    <div
+      class="container-fluid d-flex flex-wrap justify-content-center"
+      id="pagesContainer"
+    >
+      <div
+        class="flex-column justify-content-center align-items-center"
+        id="AboutUs"
+      >
+        <h1>About Us</h1>
+        <p class="mx-auto w-75">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto
+          nihil commodi ipsum, expedita, quos consequuntur qui quibusdam numquam
+          beatae tempore illo sed cupiditate enim quis maxime, magnam ratione!
+          Debitis, natus.
+        </p>
+
+        <input class="linkButton" type="button" value="More" />
+      </div>
+      <div
+        class="flex-column justify-content-center align-items-center"
+        id="Services"
+      >
+        <h1 class="mb-0">Services</h1>
+        <p class="mx-auto w-75">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto
+          nihil commodi ipsum, expedita, quos consequuntur qui quibusdam numquam
+          beatae tempore illo sed cupiditate enim quis maxime, magnam ratione!
+          Debitis, natus.
+        </p>
+        <input class="linkButton" type="button" value="More" />
+      </div>
     </div>
 
     <!-- FOOTER -->
@@ -160,6 +202,5 @@
       integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
       crossorigin="anonymous"
     ></script>
-    <script src="servicesScript.js"></script>
   </body>
 </html>
