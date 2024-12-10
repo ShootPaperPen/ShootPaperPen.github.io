@@ -25,7 +25,7 @@ promoImg.setAttribute("src", "images/" + promoImgFileName);
 
 // For Order Button
 const orderButton = document.getElementById("order");
-const orderURL = "https://web.facebook.com/profile.php?id=61555627856739"; // ENTER ORDER URL
+const orderURL = "https://web.facebook.com/profile.php?id=61555627856739  "; // ENTER ORDER URL
 orderButton.setAttribute("href", orderURL);
 
 // Use to hold objects
