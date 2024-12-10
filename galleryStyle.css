@@ -140,6 +140,10 @@ Highlighted (yellow) -- EACA86
     height: 80vh;
     max-height: 80vh !important;
     overflow-y: scroll;
+    border: 5px solid var(--gold-yellow);
+    border-radius: 1rem;
+  
+    background-color: #00000050;
   }
   
   #item-container::-webkit-scrollbar {
@@ -235,6 +239,10 @@ Highlighted (yellow) -- EACA86
       margin-bottom: 5vh; /* Reduce margin on smaller screens */
   }
   
+  #a, h1{
+    margin-top: 10vh;
+  }
+
   /* Adjust layout for image grid */
   .image-grid {
       grid-template: 1fr / 2fr; /* Single column layout */
