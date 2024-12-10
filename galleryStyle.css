@@ -94,8 +94,21 @@ Highlighted (yellow) -- EACA86
     height: 75px;
   }
 
+  .nav-link {
+    color: #d8cfc5; 
+    transition: color 0.25s ease, transform 0.25s ease, font-size 0.25s ease;
+  }
+  
   .nav-link:hover {
     color: var(--gold-yellow) !important;
+    transform: scale(1.1);      
+    font-size: 1.6rem;         
+    top: 0;
+    left: 0;
+    width: 110%; /* Adjust the width as needed */
+    height: 110%; /* Adjust the height as needed */
+    transform: scale(1.1);
+    transform-origin: center;
   }
 
   .nav-item a {

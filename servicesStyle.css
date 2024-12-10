@@ -91,8 +91,15 @@ h1 {
   height: 75px;
 }
 
+.nav-link {
+  color: #d8cfc5; 
+  transition: color 0.25s ease, transform 0.25s ease, font-size 0.25s ease;
+}
+
 .nav-link:hover {
   color: var(--gold-yellow) !important;
+  transform: scale(1.1);      
+  font-size: 1.6rem;          
 }
 
 .nav-item a {
@@ -141,6 +148,7 @@ nav {
   background-color: var(--dark-blue);
   color: white;
 }
+
 
 #item-container {
   height: 80vh;
@@ -229,6 +237,16 @@ nav {
   color: white;
   font-size: 2rem;
   text-decoration: none;
+
+  transition: transform 0.25s ease-in-out, padding 0.1s, font-size 0.25s ease-in-out;
+  display: inline;
+}
+
+#order:hover {
+  transform: scale(1.1); 
+  padding: 0.5rem 2.3rem; 
+  font-size: 2.1rem;
+  color: #eaca86;
 }
 
 /* FOOTER */

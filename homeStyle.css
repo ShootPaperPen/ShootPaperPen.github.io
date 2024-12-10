@@ -87,19 +87,28 @@ h1 {
   color: var(--gold-yellow) !important;
 }
 
+
 /* REUSABLE */
 .py-6 {
   padding-top: 6rem !important;
   padding-bottom: 6rem !important;
 }
 
+/* BUTTONS */
 .linkButton {
   border: 2px solid var(--gold-yellow);
   border-radius: 10px;
   background-color: var(--dark-blue);
   padding: 0.25rem 1rem;
-
+  transition: transform 0.25s ease-in-out, padding 0.1s, font-size 0.25s ease-in-out;
   display: inline;
+}
+
+.linkButton:hover {
+  transform: scale(1.1); 
+  padding: 0.25rem 1rem; 
+  font-size: 1.6rem;
+  color: #eaca86;
 }
 
 /* NAV CLASSES AND IDS*/
@@ -108,8 +117,18 @@ h1 {
   height: 75px;
 }
 
+.nav-link {
+  color: #d8cfc5; 
+  transition: color 0.25s ease, transform 0.25s ease, font-size 0.25s ease;
+}
+
 .nav-link:hover {
   color: var(--gold-yellow) !important;
+  transform: scale(1.1);    
+  position: inherit;  
+  font-size: 1.6rem;
+  transform: scale(1.1);
+  transform-origin: center;
 }
 
 .nav-item a {
