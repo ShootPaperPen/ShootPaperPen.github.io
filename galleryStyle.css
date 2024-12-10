@@ -87,6 +87,21 @@ Highlighted (yellow) -- EACA86
     height:350px;
     width: auto;
   }
+  
+  /* NAV CLASSES AND IDS*/
+  #logo {
+    width: 75px;
+    height: 75px;
+  }
+
+  .nav-link:hover {
+    color: var(--gold-yellow) !important;
+  }
+
+  .nav-item a {
+    color: #d8cfc5;
+  }
+
   /* PASTED LANG FROM MY TEST HTML/CSS */
   .image-grid {
     display: grid;

@@ -2,14 +2,14 @@
 https://rhodesmill.org/brandon/2011/concentric-css/
 -=CONCENTRIC CSS=-
 {
-    display: ;    // Where and how the box is placed
+    display: ;    // Where and how the is placed
     position: ;
     float: ;
     clear: ;
 
     visibility: ;  // Can the box be seen?
     opacity: ;
-    z-index: ;
+    z-index: ; 
 
     margin: ;     // Layers of the box model
     outline: ;
