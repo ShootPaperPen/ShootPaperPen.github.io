@@ -28,6 +28,7 @@ Highlighted (yellow) -- EACA86
 * {
   font-family: "laSignora";
   color: white;
+
 }
 
 body {
@@ -64,21 +65,6 @@ h1 {
   color: var(--gold-yellow) !important;
 }
 
-/* REUSABLE */
-.py-6 {
-  padding-top: 6rem !important;
-  padding-bottom: 6rem !important;
-}
-
-.linkButton {
-  border: 2px solid var(--gold-yellow);
-  border-radius: 10px;
-  background-color: var(--dark-blue);
-  padding: 0.25rem 1rem;
-
-  display: inline;
-}
-
 /* NAV CLASSES AND IDS*/
 #logo {
   width: 75px;
@@ -91,6 +77,59 @@ h1 {
 
 .nav-item a {
   color: #d8cfc5;
+}
+
+nav {
+  margin-bottom: 10vh;
+}
+/* HEADER FRAME */
+#headerFrame {
+  width: 494.4px;
+  height: 251.52px;
+}
+
+/* Vision Mission Contaier */
+
+#pagesContainer {
+  padding: 1rem;
+}
+
+#pagesContainer > div {
+  width: 650px;
+  height: 650px;
+
+  display: grid;
+  grid-template-rows: 100px 100px 300px 50px;
+  grid-template-areas: "." "header" "text";
+  gap: 0.5rem;
+
+  background-size: cover;
+
+  text-align: center;
+}
+
+#pagesContainer > #Mission {
+  background-image: url(images/MISSION.png);
+}
+
+#pagesContainer > #Vision {
+  background-image: url(images/VISION.png);
+}
+
+#pagesContainer input {
+  display: inline;
+}
+
+#pagesContainer h1 {
+  grid-area: header;
+}
+
+#pagesContainer p {
+  grid-area: text;
+}
+
+#pagesContainer > div {
+  grid-area: text;
 }
 
 /* FOOTER */
