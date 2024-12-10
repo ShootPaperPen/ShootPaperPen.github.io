@@ -207,3 +207,90 @@ Highlighted (yellow) -- EACA86
     color: var(--gold-yellow) !important;
   }
   
+/* Mobile-first approach: Default styling applies to mobile and small screens */
+@media (max-width: 760px) {
+
+  body {
+      font-size: 1.2rem; /* Reduce font size for smaller screens */
+  }
+  #logo {
+      width: 50px; /* Smaller logo */
+      height: 50px;
+  }
+
+  nav {
+      margin-bottom: 5vh; /* Reduce margin on smaller screens */
+  }
+  
+  /* Adjust layout for image grid */
+  .image-grid {
+      grid-template: 1fr / 2fr; /* Single column layout */
+  }
+
+  .image-grid img {
+      width: 100%;
+      height: 100%; /* Make images responsive */
+  }
+
+  .testimage {
+      width: 100%; /* Ensure test images fill container */
+      height: auto;
+  }
+
+  /* Adjust containers */
+  #frame, #frame + img {
+      width: 100%; /* Make images and frames full width */
+      height: auto;
+  }
+
+  #gal, #galrev {
+      height: 200px; /* Smaller images on mobile */
+      width: 100%;
+  }
+
+  #item-container {
+      height: 60vh; /* Reduce height of item container */
+  }
+
+  /* Adjust font size for buttons */
+  #order {
+      font-size: 1.6rem; /* Smaller font size for buttons */
+      padding: 0.5rem 1.5rem; /* Reduce padding */
+  }
+
+  #filter {
+      font-size: 1.2rem; /* Smaller font size for filter */
+      padding: 0.5rem 1rem;
+  }
+
+  /* Make footer more compact */
+  #footer {
+      padding: 1rem;
+  }
+}
+
+/* Larger screen behavior (tablet and up) */
+@media (min-width: 761px) {
+  body {
+      font-size: 1.4rem; /* Standard font size for tablets and up */
+  }
+
+  h1 {
+      font-size: 6rem; /* Standard heading size for larger screens */
+  }
+
+  /* Restore original grid layout */
+  .image-grid {
+      grid-template: 250px / 250px; /* Two columns for larger screens */
+  }
+
+  .testimage {
+      width: 250px;
+      height: 250px;
+  }
+
+  #gal, #galrev {
+      height: 350px;
+      width: auto;
+  }
+}
