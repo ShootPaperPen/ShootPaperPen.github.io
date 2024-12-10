@@ -62,9 +62,9 @@ document.addEventListener("DOMContentLoaded", function () {
   createNewItem("Bomb Devil - Chainsaw Man");
   createNewItem("CC - Code Geass");
   createNewItem("Cleo de Nile - Monster High");
-  createNewItem("Diaochan - Honor of Kings");
   createNewItem("Dolia - Honor of Kings");
   createNewItem("Fern - Freiren Beyond Journey's End");
+  createNewItem("Fiery Spirit Diaochan - Honor of Kings");
   createNewItem("Freiren - Freiren Beyond Journey's End");
   createNewItem("Gwen - LoL");
   createNewItem("Howl - Howl's Moving Castle");
