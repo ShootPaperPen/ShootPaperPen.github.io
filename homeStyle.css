@@ -182,7 +182,7 @@ h1 {
   grid-area: text;
 }
 
-#pagesContainer img {
+/* #pagesContainer img {
   width: 40%;
   min-width: 250px;
   max-width: 325px;
@@ -191,10 +191,10 @@ h1 {
 
   object-fit: cover;
   object-position: center;
-}
+} */
 
 /* VISION MISSION CONTAINER */
-#vismisContainer {
+#gallery {
   display: grid;
   grid-template-rows: 110px 100px 400px 100px 50px;
   grid-template-areas: "." "header" "img" "button" ".";
@@ -206,21 +206,21 @@ h1 {
   background-size: cover;
 }
 
-#vismisContainer h1 {
+#gallery h1 {
   grid-area: header;
 }
 
-#vismisContainer .img {
+#gallery .img {
   grid-area: img;
 }
 
-#vismisContainer img {
+#gallery img {
   width: 300px;
   border: 2px solid var(--gold-yellow);
   border-radius: 10px;
 }
 
-#vismisContainer a {
+#gallery a {
   grid-area: button;
 }
 
@@ -244,11 +244,11 @@ h1 {
 /* MEDIA QUERY RESPONSIVENESS */
 /* 
 @media only screen and (max-width: 850px) {
-  #vismisContainer {
+  #gallery {
     width: 500px;
   }
 
-  #vismisContainer img {
+  #gallery img {
     width: 150px;
   }
 } */
