@@ -149,7 +149,7 @@ h1 {
   height: 650px;
 
   display: grid;
-  grid-template-rows: 50px/100px/350px/100px/50px;
+  grid-template-rows: 100px 100px 300px 100px 50px;
   grid-template-areas: "." "header" "text" "button" ".";
 
   text-align: center;
@@ -186,6 +186,35 @@ h1 {
 #pagesContainer #Services {
   background: url("images/AboutUsFrame.png");
   background-size: cover;
+}
+
+/* VISION MISSION CONTAINER */
+#vismisContainer {
+  display: grid;
+  grid-template-rows: 110px 100px 400px 100px 50px;
+  grid-template-areas: "." "header" "img" "button" ".";
+
+  width: 800px;
+  height: auto;
+
+  background: url("images/AboutUsFrame.png");
+  background-size: cover;
+}
+
+#vismisContainer h1 {
+  grid-area: header;
+}
+
+#vismisContainer .img {
+  grid-area: img;
+}
+
+#vismisContainer img {
+  width: 300px;
+}
+
+#vismisContainer a {
+  grid-area: button;
 }
 
 /* FOOTER */
