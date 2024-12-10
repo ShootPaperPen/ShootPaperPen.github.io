@@ -10,7 +10,7 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link href="servicesStyle.css" rel="stylesheet" />
+    <link href="homeStyle.css" rel="stylesheet" />
     <link
       rel="icon"
       href="images/PROFILE LOGO-GOLD.png"
@@ -19,46 +19,59 @@
   </head>
   <body>
     <!-- NAVIGATION BAR -->
-    <nav class="navbar sticky-top nav-white navbar-expand-sm bg-dark-blue mt-0">
-      <div class="container-fluid">
-        <a href="#" class="navbar-brand ms-3"
+    <nav
+      class="navbar navbar-dark sticky-top nav-white navbar-expand-sm bg-dark-blue mt-0"
+    >
+      <div class="container-fluid mx-2">
+        <a href="home.html" class="navbar-brand"
           ><img
             src="images/PROFILE LOGO-GOLD.png"
             alt="Miwacle-Gold-Logo"
             id="logo"
         /></a>
-      </div>
-      <div class="container-fluid justify-content-end">
-        <ul class="navbar-nav">
-          <li class="nav-item mx-4">
-            <a href="#" class="nav-link text-color-gold-yellow">HOME</a>
-          </li>
-          <li class="nav-item mx-4">
-            <a href="about.html" class="nav-link">ABOUT</a>
-          </li>
-          <li class="nav-item mx-4">
-            <a href="services.html" class="nav-link">SERVICE</a>
-          </li>
-          <li class="nav-item mx-4">
-            <a href="gallery.html" class="nav-link">GALLERY</a>
-          </li>
-        </ul>
+        <button
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          class="navbar-toggler"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav align-items-center">
+            <li class="nav-item mx-4">
+              <a href="#" class="nav-link text-color-gold-yellow">HOME</a>
+            </li>
+            <li class="nav-item mx-4">
+              <a href="about.html" class="nav-link">ABOUT</a>
+            </li>
+            <li class="nav-item mx-4">
+              <a href="services.html" class="nav-link">SERVICE</a>
+            </li>
+            <li class="nav-item mx-4">
+              <a href="gallery.html" class="nav-link">GALLERY</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
-    
-    <!-- BANNER -->
-     <div class="container-fluid">
-      <img
-        src="images/MIWACLE-BANNER.jpg"
-        class="img-fluid"
-        alt="Miwacle Banner"
-        id="homeBanner"
-      />
-     </div>
-     <br /><br /><br />
+
+    <!-- HOME BANNER -->
+
+    <div class="">
+      <img src="images/HomeBanner.png" alt="Banner" class="w-100" />
+    </div>
 
     <!-- PROMO RENT / CAROUSEL -->
-    <div class="container d-flex justify-content-center align-items-center" id="carouselContainer">
+    <div
+      class="container-fluid d-flex justify-content-center align-items-center py-6 bg-semi-transparent-white"
+    >
       <img
         src="images/MIWACLE-FRAME.png"
         alt="Miwacle Frame"
@@ -94,13 +107,13 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="images/MIWACLE-PROMO.png" class="d-block" alt="Miwacle Promo 1" />
+            <img src="images/MIWACLE-PROMO.png" class="d-block" alt="..." />
           </div>
           <div class="carousel-item">
-            <img src="images/MIWACLE-PROMO-2.jpg" class="d-block" alt="Miwacle Promo 2" />
+            <img src="images/MIWACLE 2 GOLD.png" class="d-block" alt="..." />
           </div>
           <div class="carousel-item">
-            <img src="images/MIWACLE-PROMO-3.jpg" class="d-block" alt="Miwacle Promo 3" />
+            <img src="images/MIWACLE 2 WHITE.png" class="d-block" alt="..." />
           </div>
         </div>
         <button
@@ -124,27 +137,92 @@
       </div>
       <!-- <img src="images/MIWACLE-PROMO.png" alt="Miwacle Promo" /> -->
     </div>
-    <br /><br /><br />
-
 
     <!-- HOME LINE -->
-    <div class="container-fluid">
-      <img src="images/HOME_LINE.png" class="img-fluid">
+    <div class="d-flex justify-content-center">
+      <img
+        src="images/HOME_LINE.png"
+        class="object-center object-fill w-75 mx-auto"
+      />
     </div>
 
-    <!-- CONTINUE -->
-    <!-- ABOUT US CONTENT -->
-    <div class="">
-      <img 
-        src="images/ABOUTUS.png" 
-        alt="About Us Frame"
-        class="position-absolute"
-        id="aboutUsFrame">
-      <h1 class="text-center">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ipsum, ipsa, dolor aliquid id corporis non culpa ut, similique perferendis velit ex sunt suscipit sed optio beatae exercitationem modi debitis!
-      </h1>
+    <!-- ABOUT US AND SERVICES -->
+    <div
+      class="container-fluid d-flex flex-wrap justify-content-center"
+      id="pagesContainer"
+    >
+      <div
+        class="flex-column justify-content-center align-items-center"
+        id="AboutUs"
+      >
+        <h1>About Us</h1>
+        <p class="mx-auto w-75">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto
+          nihil commodi ipsum, expedita, quos consequuntur qui quibusdam numquam
+          beatae tempore illo sed cupiditate enim quis maxime, magnam ratione!
+          Debitis, natus.
+        </p>
+        <a href="about.html" class="text-decoration-none"
+          ><input class="linkButton" type="button" value="More" />
+        </a>
+      </div>
+      <div
+        class="flex-column justify-content-center align-items-center"
+        id="Services"
+      >
+        <h1 class="mb-0">Services</h1>
+        <p class="mx-auto w-75">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto
+          nihil commodi ipsum, expedita, quos consequuntur qui quibusdam numquam
+          beatae tempore illo sed cupiditate enim quis maxime, magnam ratione!
+          Debitis, natus.
+        </p>
+        <a href="services.html" class="d-inline text-decoration-none">
+          <input class="linkButton" type="button" value="More" />
+        </a>
+      </div>
+      <div
+        class="flex-column justify-content-center align-items-center"
+        id="Gallery"
+      >
+        <h1>Gallery</h1>
+        <div class="d-flex flex-nowrap justify-content-center">
+          <img
+            src="images/item-image/Zero Two(Maid) - Darling in the Franxx.jpg"
+            alt=""
+            class="object-fit object-center mx-1"
+          />
+          <img
+            src="images/item-image/Zero Two(Maid) - Darling in the Franxx.jpg"
+            alt=""
+            class="object-cover object-center mx-1"
+          />
+        </div>
+        <a href="gallery.html" class="text-decoration-none">
+          <input class="linkButton" type="button" value="More" />
+        </a>
+      </div>
     </div>
 
+    <div
+      id="vismisContainer"
+      class="my-5 container-fluid justify-content-center align-items-center text-center"
+    >
+      <h1 class="my-2">Gallery</h1>
+      <div class="my-2 img d-flex justify-content-center align-items-center">
+        <img
+          src="images/item-image/Zero Two(Maid) - Darling in the Franxx.jpg"
+          class="mx-1"
+        />
+        <img
+          src="images/item-image/Aura - Freiren Beyond Journey's End.jpg"
+          class="mx-1"
+        />
+      </div>
+      <a href="gallery.html" class="d-inline text-decoration-none">
+        <input class="linkButton" type="button" value="More" />
+      </a>
+    </div>
 
     <!-- FOOTER -->
     <div
@@ -182,6 +260,5 @@
       integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
       crossorigin="anonymous"
     ></script>
-    <script src="servicesScript.js"></script>
   </body>
 </html>
