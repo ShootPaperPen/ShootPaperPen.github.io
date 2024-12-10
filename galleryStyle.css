@@ -76,12 +76,14 @@ Highlighted (yellow) -- EACA86
     height: 448.8px;
   }
   #gal{
-    margin-left: 3.5%;  
+    display: block;
+    margin: 0% auto;
     height:350px;
     width: auto;
   }
   #galrev{
-    margin-left: 3.5%;
+    display: block;
+    margin: 0% auto;
     height:350px;
     width: auto;
   }
