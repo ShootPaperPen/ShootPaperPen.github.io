@@ -163,7 +163,10 @@ nav {
 #item-container::-webkit-scrollbar-thumb:hover {
   background-color: hsla(41, 70%, 72%, 0.25);
 }
-
+.modal-header{
+background-image: url("images/MODALHEADERBG.png");
+background-size:contain;
+background-position: center;}
 #modalContent {
   overflow-y: scroll;
   max-height: 85vh;
