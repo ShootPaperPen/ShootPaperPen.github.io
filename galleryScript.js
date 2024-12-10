@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   createNewItem("2B - Nier Automata");
   createNewItem("Aura - Freiren Beyond Journey's End");
-  createNewItem("Autumn Fox");
+  createNewItem("Autumn Kitsune");
   createNewItem("Battle Bunny Miss Fortune - LoL");
   createNewItem("Black Lobelia - My Dress-Up Darling");
   createNewItem("Bomb Devil - Chainsaw Man");
@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
   createNewItem("Fiery Spirit Diaochan - Honor of Kings");
   createNewItem("Freiren - Freiren Beyond Journey's End");
   createNewItem("Gwen - LoL");
-  createNewItem("Howl - Howl's Moving Castle");
+  createNewItem("Howl Black & Bird - Howl's Moving Castle");
   createNewItem("Howl(Blonde) - Howl's Moving Castle");
   createNewItem("Jinx - Arcane");
   createNewItem("Kafka - HSR");

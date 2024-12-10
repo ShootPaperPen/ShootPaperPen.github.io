@@ -1,12 +1,40 @@
 /* 
-Navigation bar background color -- 03032b
-Text Color (white) -- D8CFC5
-Highlighted (yellow) -- EACA86
+https://rhodesmill.org/brandon/2011/concentric-css/
+-=CONCENTRIC CSS=-
+{
+    display: ;    // Where and how the box is placed
+    position: ;
+    float: ;
+    clear: ;
+
+    visibility: ;  // Can the box be seen?
+    opacity: ;
+    z-index: ;
+
+    margin: ;     // Layers of the box model
+    outline: ;
+    border: ;
+    background: ;
+    padding: ;
+
+    width: ;      // Content dimensions and scrollbars
+    height: ;
+    overflow: ;
+
+    color: ;      // Text
+    text: ;
+    font: ;
+}
 */
 
 @font-face {
   font-family: laSignora;
   src: url(fonts/LaSignora-DemoVersion-Regular.otf);
+}
+
+@font-face {
+  font-family: theBlowar;
+  src: url(fonts/TheBlowarRegular-d91mZ.ttf);
 }
 
 @font-face {
@@ -22,173 +50,175 @@ Highlighted (yellow) -- EACA86
 
 * {
   font-family: "laSignora";
-}
-
-p{
-  color: var(--darker-white);
+  color: white;
 }
 
 body {
-  font-size: 1.4rem;
-  height: 300vh;
   background-image: url("images/MIWACLE-BACKGROUND.png");
   background-size: cover;
-  
-}
-
-#logo {
-  width: 75px;
-  height: 75px;
-}
-
-.bg-dark-blue {
-  background-color: #03032b;
-}
-
-.nav-item a {
-  color: #d8cfc5 !important;
-}
-
-#a {
-  width: 494.4px;
-  height: 251.52px;
+  font-size: 1.4rem;
 }
 
 h1 {
   font-size: 6rem;
   font-family: "bismark";
+  color: var(--gold-yellow);
+  text-decoration-line: underline;
 }
 
-.text-specialYellow {
-  color: #eaca86;
+/* TEXT AND BACKGROUND COLOR */
+.bg-dark-blue {
+  background-color: #03032b !important;
 }
 
-nav {
-  margin-bottom: 10vh;
+.bg-semi-transparent-white {
+  background-color: hsla(235, 62%, 31%, 0.25) !important;
 }
 
-#frame {
-  width: 580.8px;
-  height: 580.8px;
-}
-
-#frame + img {
-  width: 448.8px;
-  height: 448.8px;
-}
-
-/* PASTED LANG FROM MY TEST HTML/CSS */
-.image-grid {
-  display: grid;
-  grid-template: 250px / 250px;
-}
-
-.image-grid img {
-  width: 250px;
-  height: 250px;
-  grid-row: 1/2;
-  grid-column: 1/2;
+.text-color-specialYellow {
+  color: #eaca86 !important;
 }
 
 .text-color-yellow {
-  color: #cf920f;
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-  gap: 0px; /* Space between boxes */
-  max-width: 80%; /* Limit the width of the container */
-  flex-wrap: wrap; /* Ensure responsiveness on smaller screens */
-}
-
-
-.box {
-  width: 300px;
-  height: 400px;
-  background-size: cover;
-  background-position: center;
-  padding: 20px;
-  border: 0px solid #cf920f;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.box h2 {
-  margin-top: 0;
-  font-size: 24px;
-  color: #cf920f;
-}
-
-.box p {
-  font-size: 16px;
-  line-height: 1.5;
-  color: #ccc;
-  text-align: center;
-}
-
-
-.vision {
-  background-image: url('images/VISION.png');
-}
-
-.mission {
-  background-image: url('images/MISSION.png');
+  color: #cf920f !important;
 }
 
 .text-color-gold-yellow {
   color: var(--gold-yellow) !important;
 }
 
-.text-color-white {
-  color: var(--darker-white);
+
+/* REUSABLE */
+.py-6 {
+  padding-top: 6rem !important;
+  padding-bottom: 6rem !important;
 }
 
-#item-container {
-  height: 80vh;
-  max-height: 80vh !important;
-  overflow-y: scroll;
+/* BUTTONS */
+.linkButton {
+  border: 2px solid var(--gold-yellow);
+  border-radius: 10px;
+  background-color: var(--dark-blue);
+  padding: 0.25rem 1rem;
+  transition: transform 0.25s ease-in-out, padding 0.1s, font-size 0.25s ease-in-out;
+  display: inline;
 }
 
-.testimage {
-  height: 250px;
-  width: 250px;
-  grid-row: 1/2;
-  grid-column: 1/2;
+.linkButton:hover {
+  transform: scale(1.1); 
+  padding: 0.25rem 1rem; 
+  font-size: 1.6rem;
+  color: #eaca86;
 }
 
-.my-grid {
+/* NAV CLASSES AND IDS*/
+#logo {
+  width: 75px;
+  height: 75px;
+}
+
+.nav-link {
+  color: #d8cfc5; 
+  transition: color 0.25s ease, transform 0.25s ease, font-size 0.25s ease;
+}
+
+.nav-link:hover {
+  color: var(--gold-yellow) !important;
+  transform: scale(1.1);    
+  position: inherit;  
+  font-size: 1.6rem;
+  transform: scale(1.1);
+  transform-origin: center;
+}
+
+.nav-item a {
+  color: #d8cfc5;
+}
+
+nav {
+  margin-bottom: 10vh;
+}
+
+/* HEADER FRAME */
+#headerFrame {
+  width: 494.4px;
+  height: 251.52px;
+}
+
+
+/* PROMO RENT FRAME AND OR CAROUSEL */
+#promoFrame {
+  width: 580.8px;
+  height: 580.8px;
+}
+
+#promoFrame + img {
+  width: 448.8px;
+  height: 448.8px;
+}
+
+.carousel-inner {
+  width: 448.8px;
+  height: 448.8px;
+}
+
+.carousel-item > img {
+  width: 448.8px;
+  height: 448.8px;
+  object-fit: cover;
+}
+
+/* ABOUT US, SERVICES, GALLERY*/
+#pagesContainer {
+  padding: 1rem;
+}
+
+#pagesContainer > div {
+  width: 650px;
+  height: 650px;
+
   display: grid;
-  grid-template: 250px/ 250px;
+  grid-template-rows: 100px 100px 300px 50px;
+  grid-template-areas: "." "header" "text" "button";
+  gap: 0.5rem;
+
+  background-size: cover;
+  text-align: center;
 }
 
-#filter {
-  padding: 0.5rem 1rem;
-  border: 5px solid var(--gold-yellow);
-  border-radius: 15px;
-  background-color: var(--dark-blue);
-  color: white;
+#pagesContainer > #Mission {
+  background-image: url(images/MISSION.png);
 }
 
-/* #filter:hover {
-  background-color: black;
-} */
-#order {
-  border: 5px solid var(--gold-yellow);
-  border-radius: 1rem;
-
-  color: white;
-  font-size: 2rem;
-  text-decoration: none;
-
-  background-color: var(--dark-blue);
-
-  padding: 0.5rem 2rem;
+#pagesContainer > #Vision {
+  background-image: url(images/VISION.png);
 }
 
+#pagesContainer input {
+  display: inline;
+}
+
+#pagesContainer a {
+  display: inline;
+}
+
+#pagesContainer h1 {
+  grid-area: header;
+}
+
+#pagesContainer p {
+  grid-area: text;
+}
+
+#pagesContainer a {
+  grid-area: button;
+}
+
+#pagesContainer > div > div {
+  grid-area: text;
+}
+
+/* FOOTER */
 #footer {
   padding: 2rem;
   background-image: url("images/MIWACLE-FOOTER-BG.png");
@@ -196,15 +226,11 @@ nav {
 }
 
 #footer * {
-  font-family: "theBlowar";
   color: white;
+  font-family: "theBlowar";
 }
 
 .icon {
   width: 2rem;
   height: 2rem;
-}
-
-.nav-link:hover {
-  color: var(--gold-yellow) !important;
 }
