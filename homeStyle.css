@@ -211,6 +211,8 @@ h1 {
 
 #vismisContainer img {
   width: 300px;
+  border: 2px solid var(--gold-yellow);
+  border-radius: 10px;
 }
 
 #vismisContainer a {
@@ -232,4 +234,16 @@ h1 {
 .icon {
   width: 2rem;
   height: 2rem;
+}
+
+/* MEDIA QUERY RESPONSIVENESS */
+
+@media only screen and (max-width: 850px) {
+  #vismisContainer {
+    width: 500px;
+  }
+
+  #vismisContainer img {
+    width: 150px;
+  }
 }
