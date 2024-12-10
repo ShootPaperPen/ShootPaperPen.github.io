@@ -19,6 +19,7 @@
     <link href="aboutStyles.css" rel="stylesheet" />
   </head>
   <body>
+<<<<<<< Updated upstream
     <!-- nav -->
     <nav
       class="navbar navbar-dark sticky-top nav-white navbar-expand-sm bg-dark-blue mt-0"
@@ -101,14 +102,58 @@
     </div>
 
     <!-- ABOUT US AND SERVICES -->
-    <div
-      class="container-fluid d-flex flex-wrap justify-content-center"
-      id="pagesContainer"
+=======
+
+    <!-- NAVIGATION BAR -->
+    <nav
+    class="navbar navbar-dark sticky-top nav-white navbar-expand-sm bg-dark-blue mt-0"
     >
-      <div
-        class="flex-column justify-content-center align-items-center"
-        id="AboutUs"
+    <div class="container-fluid mx-2">
+      <a href="home.html" class="navbar-brand"
+        ><img
+          src="images/PROFILE LOGO-GOLD.png"
+          alt="Miwacle-Gold-Logo"
+          id="logo"
+      /></a>
+      <button
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        class="navbar-toggler"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
       >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-end"
+        id="navbarNav"
+      >
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item mx-4">
+            <a href="home.html" class="nav-link">HOME</a>
+          </li>
+          <li class="nav-item mx-4">
+            <a href="#" class="nav-link text-color-gold-yellow">ABOUT</a>
+          </li>
+          <li class="nav-item mx-4">
+            <a href="services.html" class="nav-link">SERVICE</a>
+          </li>
+          <li class="nav-item mx-4">
+            <a href="gallery.html" class="nav-link">GALLERY</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <!-- header -->
+>>>>>>> Stashed changes
+    <div
+        class="container-fluid d-flex justify-content-center align-items-center mb-5 extra-margin-bottom"
+      >
+<<<<<<< Updated upstream
         <h1>About Us</h1>
         <p class="mx-auto w-75">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto
@@ -116,20 +161,30 @@
           beatae tempore illo sed cupiditate enim quis maxime, magnam ratione!
           Debitis, natus.
         </p>
+=======
+        <img
+          src="images/MIWACLE-CONTAINER.png"
+          alt="Miwacle About Us Header Frame"
+          class="position-absolute"
+          id="a"
+        />
+        <h1 class="text-center text-decoration-underline text-specialYellow">
+          ABOUT US
+        </h1>
+>>>>>>> Stashed changes
       </div>
+      <br /><br /><br />
 
-      <div
-        class="flex-column justify-content-center align-items-center"
-        id="Services"
+      <!-- ABOUT US INFO -->
+      <div 
+        class="fs-4 text-center text-color-white m-5"
+        id="aboutUsText"
       >
-        <h1 class="mb-0">Services</h1>
-        <p class="mx-auto w-75">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto
-          nihil commodi ipsum, expedita, quos consequuntur qui quibusdam numquam
-          beatae tempore illo sed cupiditate enim quis maxime, magnam ratione!
-          Debitis, natus.
-        </p>
+          Miwacle Cosplay Rentals is an online costume rental shop from Antipolo. With a diverse selection of characters from all sorts 
+          of anime, cartoons, games, and more. We ship from Antipolo/Manila depending on the time available. For inquiries, send a message 
+          to <a href="https://web.facebook.com/people/Miwacle-Cosplay-Rentals/61555627856739/?_rdc=1&_rdr" class="text-color-gold-yellow">Miwacle Cosplay Rentals</a> on facebook.com
       </div>
+<<<<<<< Updated upstream
     </div>
 
     <img
@@ -164,3 +219,75 @@
     <script src="servicesScript.js"></script>
   </body>
 </html>
+=======
+
+      <!-- ABOUT LINE -->
+      <div class="container-fluid text-center">
+        <img src="images/ABOUT_LINE.png" class="img-fluid">
+      </div>
+
+      <!-- ABOUT US AND SERVICES -->
+      <div
+        class="container-fluid d-flex flex-wrap justify-content-center"
+        id="pagesContainer"
+      >
+        <div
+          class="flex-column justify-content-center align-items-center"
+          id="AboutUs"
+        >
+          <h1>About Us</h1>
+          <p class="mx-auto w-75">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto
+            nihil commodi ipsum, expedita, quos consequuntur qui quibusdam numquam
+            beatae tempore illo sed cupiditate enim quis maxime, magnam ratione!
+            Debitis, natus.
+          </p>
+
+        </div>
+
+        <div
+          class="flex-column justify-content-center align-items-center"
+          id="Services"
+        >
+          <h1 class="mb-0">Services</h1>
+          <p class="mx-auto w-75">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto
+            nihil commodi ipsum, expedita, quos consequuntur qui quibusdam numquam
+            beatae tempore illo sed cupiditate enim quis maxime, magnam ratione!
+            Debitis, natus.
+          </p>
+        </div>
+      </div>
+        
+        <img 
+          src="images/MISSION.png" 
+          alt="Vision Frame"
+          class="position-relative"
+          id="aboutUsFrame">
+        
+      </div>
+      <!-- footer -->
+      <div
+        class="container-fluid position-relative fixed-bottom bg-primary mb-0"
+        id="footer">
+        <div class="d-flex flex-column">
+          <div>
+            <img src="images/facebookIcon.png" class="icon me-2 my-1" />Miwacle
+            Cosplay Rentals / Miwah Coser
+          </div>
+          <div>
+            <img src="images/phoneIcon.png" class="icon me-2 my-1" />09217284200
+          </div>
+          <div>
+            <img
+              src="images/emailIcon.png"
+              class="icon me-2 my-1"
+            />miwahcos@gmail.com
+          </div>
+        </div>
+      </div>
+
+    <script src="servicesScript.js"></script>
+  </body>
+</html>
+>>>>>>> Stashed changes
