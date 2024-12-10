@@ -17,38 +17,56 @@
       type="image/icon type"
     />
     <link href="aboutStyles.css" rel="stylesheet" />
-</head>
-<body>
-  <!-- nav -->
-  <nav class="navbar sticky-top nav-white navbar-expand-sm bg-dark-blue mt-0">
-    <div class="container">
-      <a href="#" class="navbar-brand ms-3"
-        ><img
-          src="images/PROFILE LOGO-GOLD.png"
-          alt="Miwacle-Gold-Logo"
-          id="logo"
-      /></a>
-    </div>
-    <div class="container justify-content-center">
-      <ul class="navbar-nav justify-content-evenly">
-        <li class="nav-item mx-4">
-          <a href="home.html" class="nav-link">HOME</a>
-        </li>
-        <li class="nav-item mx-4">
-          <a href="#" class="nav-link text-color-gold-yellow">ABOUT</a>
-        </li>
-        <li class="nav-item mx-4">
-          <a href="services.html" class="nav-link">SERVICE</a>
-        </li>
-        <li class="nav-item mx-4">
-          <a href="gallery.html" class="nav-link">GALLERY</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+  </head>
+  <body>
+    <!-- nav -->
+    <nav
+      class="navbar navbar-dark sticky-top nav-white navbar-expand-sm bg-dark-blue mt-0"
+    >
+      <div class="container-fluid mx-2">
+        <a href="home.html" class="navbar-brand"
+          ><img
+            src="images/PROFILE LOGO-GOLD.png"
+            alt="Miwacle-Gold-Logo"
+            id="logo"
+        /></a>
+        <button
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          class="navbar-toggler"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav align-items-center">
+            <li class="nav-item mx-4">
+              <a href="home.html" class="nav-link text-color-gold-yellow"
+                >HOME</a
+              >
+            </li>
+            <li class="nav-item mx-4">
+              <a href="#" class="nav-link">ABOUT</a>
+            </li>
+            <li class="nav-item mx-4">
+              <a href="services.html" class="nav-link">SERVICE</a>
+            </li>
+            <li class="nav-item mx-4">
+              <a href="gallery.html" class="nav-link">GALLERY</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-  <!-- header -->
-  <div
+    <!-- header -->
+    <div
       class="container-fluid d-flex justify-content-center align-items-center mb-5 extra-margin-bottom"
     >
       <img
@@ -64,18 +82,22 @@
     <br /><br /><br />
 
     <!-- ABOUT US INFO -->
-    <div 
-      class="fs-4 text-center text-color-white m-5"
-      id="aboutUsText"
-    >
-        Miwacle Cosplay Rentals is an online costume rental shop from Antipolo. With a diverse selection of characters from all sorts 
-        of anime, cartoons, games, and more. We ship from Antipolo/Manila depending on the time available. For inquiries, send a message 
-        to <a href="https://web.facebook.com/people/Miwacle-Cosplay-Rentals/61555627856739/?_rdc=1&_rdr" class="text-color-gold-yellow">Miwacle Cosplay Rentals</a> on facebook.com
-     </div>
+    <div class="fs-4 text-center text-color-white m-5" id="aboutUsText">
+      Miwacle Cosplay Rentals is an online costume rental shop from Antipolo.
+      With a diverse selection of characters from all sorts of anime, cartoons,
+      games, and more. We ship from Antipolo/Manila depending on the time
+      available. For inquiries, send a message to
+      <a
+        href="https://web.facebook.com/people/Miwacle-Cosplay-Rentals/61555627856739/?_rdc=1&_rdr"
+        class="text-color-gold-yellow"
+        >Miwacle Cosplay Rentals</a
+      >
+      on facebook.com
+    </div>
 
-     <!-- ABOUT LINE -->
+    <!-- ABOUT LINE -->
     <div class="container-fluid text-center">
-      <img src="images/ABOUT_LINE.png" class="img-fluid">
+      <img src="images/ABOUT_LINE.png" class="img-fluid" />
     </div>
 
     <!-- ABOUT US AND SERVICES -->
@@ -94,7 +116,6 @@
           beatae tempore illo sed cupiditate enim quis maxime, magnam ratione!
           Debitis, natus.
         </p>
-
       </div>
 
       <div
@@ -110,18 +131,19 @@
         </p>
       </div>
     </div>
-      
-      <img 
-        src="images/MISSION.png" 
-        alt="Vision Frame"
-        class="position-relative"
-        id="aboutUsFrame">
-      
-    </div>
+
+    <img
+      src="images/MISSION.png"
+      alt="Vision Frame"
+      class="position-relative"
+      id="aboutUsFrame"
+    />
+
     <!-- footer -->
     <div
       class="container-fluid position-relative fixed-bottom bg-primary mb-0"
-      id="footer">
+      id="footer"
+    >
       <div class="d-flex flex-column">
         <div>
           <img src="images/facebookIcon.png" class="icon me-2 my-1" />Miwacle
@@ -139,6 +161,6 @@
       </div>
     </div>
 
-<script src="servicesScript.js"></script>
-</body>
+    <script src="servicesScript.js"></script>
+  </body>
 </html>
